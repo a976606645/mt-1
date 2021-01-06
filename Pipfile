@@ -1,0 +1,17 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.douban.com/simple"
+verify_ssl = true
+
+[dev-packages]
+yapf = "==0.28.0"
+ipdb = "==0.12.2"
+flake8 = "==3.7.8"
+isort = "==4.3.21"
+
+[packages]
+requests = "*"
+beautifulsoup4 = "*"
+
+[requires]
+python_version = "3"
