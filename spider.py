@@ -275,6 +275,8 @@ class Econnoisseur:
             params=params,
             data=self.order_data,
         )
+        if resp.text.startswith("https"):
+            return
         resp_json = parse_json(resp.text)
         if resp_json["success"]:
             logger.info("抢购成功，PC端付款链接：%s" % resp_json["pcUrl"])

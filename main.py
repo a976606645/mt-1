@@ -17,7 +17,7 @@ seckill_time = now.replace(
 
 logger.info("脚本将于 %s 开始抢购" % seckill_time)
 while True:
-    if datetime.now() > seckill_time:
+    if datetime.now() >= seckill_time:
         logger.info("时间到，开始抢购")
         e.seckill_by_pool()
-    time.sleep(0.1)
+    time.sleep(0.01)
